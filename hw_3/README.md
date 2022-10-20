@@ -2,6 +2,7 @@
 WSL Wsman Shell commandLine version 0.2.1 (installed Ubuntu 20.04.4 LTS) was utilized for running [ultraviolence.py](https://github.com/krglkvrmn/Virtual_environment_research/blob/master/ultraviolence.py) 
 
 **Preparation**
+
 Script uses pre-release version of Python3.11, so previously you need install it. Instruction for installing you can find [there](https://bytexd.com/how-to-install-python-on-ubuntu/)
 
 Please note that conda hasn't contained Python3.11 yet, so for creation Virtual environment (further venv) should use virtualenv. To install virtualenv via pip:
@@ -17,6 +18,7 @@ In my case it's:
 /usr/bin/python3.11
 ```
 **Creation Virtual environment**
+
 A. Determine directory of future venv
 B. Create venv
 ```
@@ -40,6 +42,7 @@ N.B. To check Python version is python3.11:
 python --version
 ```
 **Install packages**
+
 You should install next packages inside venv:
 ```
 $ pip install google
@@ -65,6 +68,7 @@ If you need you may again save dependencies (suddenly):
 pip freeze > requirements.txt
 ```
 **Run ultraviolence**
+
 Inside venv run ultraviolence.py
 ```
 python /path/to/script/ultraviolence.py
