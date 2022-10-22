@@ -28,7 +28,7 @@ def fun_reverse(seq):
 
 # function for reverse complement
 def fun_reverse_complement(seq, dictionary):
-    output = foo_reverse(foo_complement(seq, dictionary))
+    output = fun_reverse(fun_complement(seq, dictionary))
     return output
 
 
