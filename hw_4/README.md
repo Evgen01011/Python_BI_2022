@@ -1,9 +1,11 @@
 #### Homework 4. numpy
 
 **Describing**
+
 Script realises some function for matrix and vector operation. Additionaly, if you run program directly you will see the creation of three arrays. 
 
 **Preparation**
+
 For convenient utilizing this script I advise user to create virtual environment.
 
 First of all, you should create virtual environment in acceptable directory (*numpy_venv* is a name for example).
@@ -30,6 +32,7 @@ python3 /path/to/script/numpy_challenge.py
 ```
 
 **Features**
+
 The script contain next function:  
 - `matrix_multiplication` - the function accepts 2 matrices, multiplies them according to matrix rules and outputs the resulting matrix
     ```
