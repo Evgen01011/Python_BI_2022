@@ -47,6 +47,7 @@ You should install next packages inside venv:
 $ pip install google google-cloud google-cloud-vision Biopython aiohttp pandas==1.4.4 opencv-python lxml
 Or you may use *requirements.txt* in relevant directory:
 ```
+git clone https://github.com/Evgen01011/Python_BI_2022
 pip install -r requirements.txt
 ```
 And check attendance these packages in *site-packages* (you see another moduls - it's important for executing function these one):
