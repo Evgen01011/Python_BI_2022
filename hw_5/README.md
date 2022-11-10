@@ -43,14 +43,21 @@ The analysis of the rRNA amount collected during the assembly process was carrie
  
 ### Second task
 The data of differential gene expression was visualised via volcano plot (Volcano_plot.png) 
+
 On the X-axis: Logarithmic Fold Change
+
 On the Y axis: negative decimal logarithm p-value (adjusted for multiple comparison)
+
 Data from diffexpr_data.tsv.gz
+
 The arrows show the 2 most significantly increased and decreased gene expression
 
 ### Third task
+
 The data of cancer incidence spreading on different organs the last year was visualised via pie chart (Pie_plot.png) 
+
 The diagram demonctates percent of particular cancer type
+
 Data from Worldwide Cancer Dataset.csv (from Kaggle)
 
 
