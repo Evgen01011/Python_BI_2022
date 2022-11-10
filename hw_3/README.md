@@ -44,16 +44,7 @@ python --version
 **Install packages**
 
 You should install next packages inside venv:
-```
-$ pip install google
-$ pip install google-cloud
-$ pip install google-cloud-vision
-$ pip install Biopython
-$ pip install aiohttp  
-$ pip install pandas==1.4.4
-$ pip install opencv-python
-$ pip install lxml
-```
+$ pip install google google-cloud google-cloud-vision Biopython aiohttp pandas==1.4.4 opencv-python lxml
 Or you may use *requirements.txt* in relevant directory:
 ```
 pip install -r requirements.txt
