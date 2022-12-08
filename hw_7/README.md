@@ -33,7 +33,9 @@ The script contain next function:
     sequential_map(*args)
     ```
 > Example: 
+> 
 > Q: sequential_map(np.square, np.sqrt, lambda x: x**3, [1, 2, 3, 4, 5])
+> 
 > R: [1, 8, 27, 64, 125]
 
 - `consensus_filter` - the function accepts any number of functions that return True or False, as well as a container with some values. The function returns a list of values that, when passed to all functions, give True.
@@ -51,7 +53,9 @@ The script contain next function:
     conditional_reduce(function1, function2, container)
     ```
 > Example: 
+> 
 > Q: conditional_reduce(lambda x: x < 5, lambda x, y: x + y, [1, 3, 5, 10])
+> 
 > R: 4
  
  - `func_chain` - the function accepts as arguments any number of functions. The function returns a function combining all passed by sequential execution.
@@ -59,8 +63,11 @@ The script contain next function:
     func_chain(*args)
     ```
 > Example: 
+> 
 > Q: my_chain = func_chain(lambda x: x + 2, lambda x: (x/4, x//4))
+> 
 > Q: my_chain(37)
+> 
 > R: (9.75, 9)
 
 - `sequential_map_improved` - the analog of the `sequential_map` function, but with the use of `func_chain`.
@@ -73,6 +80,7 @@ The script contain next function:
     multiple_partial(*args, **keywords)
     ```
 > Example: 
+> 
 > ax1_mean, ax1_max, ax1_sum = multiple_partial(np.mean, np.max, np.sum, axis=1)
 
 - ` bicycled_print` - an analogue of the `print` function.
@@ -85,7 +93,9 @@ Parameters:
     bicycled_print(*args, sep=' ', end='\n', file=sys.stdout)
     ```
 > Example: 
+> 
 > Q: bicycled_print('Why', 'am', 'I', 'doing', 'print', sep=' ', end='?')
+> 
 > R: Why am I doing print?
 
 
