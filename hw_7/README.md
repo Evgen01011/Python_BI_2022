@@ -41,7 +41,9 @@ The script contain next function:
     consensus_filter(*args)
     ```
 > Example: 
+> 
 > Q: consensus_filter(lambda x: x > 0, lambda x: x > 5, lambda x: x < 10, [-2, 0, 4, 6, 11])
+> 
 > R: [6]
 
 - `conditional_reduce` - the function accepts 2 functions and the container with values. The first function should take 1 argument and return True or False, the second also takes 2 arguments and returns a value - the result of reduce, skipping the values with which the first function returned False.
