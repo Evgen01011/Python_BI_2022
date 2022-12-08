@@ -18,7 +18,7 @@ The second step is the installation of the necessary module. This can be done in
 Through copy requiremets.txt from this repository (branch homework_6)
 ```
 git clone https://github.com/Evgen01011/Python_BI_2022/tree/homework_6
-pip install -r ../Python_BI_2022/hw_6/requiremets.txt
+pip install -r ../Python_BI_2022/hw_6/requirements.txt
 ```
 
 ## Features
