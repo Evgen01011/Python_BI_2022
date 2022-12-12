@@ -14,10 +14,10 @@ Also you need activate this venv
 ```
 source func_venv/bin/activate
 ```
-The second step is the installation of the numpy module. This can be done in the following ways:
+The second step is the installation of the sys module. This can be done in the following ways:
 1. Install package numpy inside venv directly:
 ```
-pip install sys==3.11.1
+pip install os-sys==2.1.4
 ```
 2. Through copy requiremets.txt from this repository (branch homework_7)
 ```
