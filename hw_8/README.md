@@ -47,8 +47,11 @@ The script contain next programs:
     ./wc.py [OPTION]... [FILE]...
     ```
 > Flags: 
+>
 > -l: count line
+>
 > -w: count words
+>
 > -c: count bytes
 
 - `ls.py` - ls analog. It is used to list the names of all the objects that are present in directories.
@@ -56,6 +59,7 @@ The script contain next programs:
     ./ls.py [OPTION]... [DIRECTORY]...
     ```
 > Flag: 
+>
 > -a: show hidden objects
 
 - `sort.py` - sort analog. It is used to sort a file, arranging the records in a particular order.
@@ -68,6 +72,7 @@ The script contain next programs:
     ./rm.py [OPTION]... [FILE / DIRECTORY]...
     ```
 > Flag: 
+>
 > -r: remove directories and contained files
 
  - `mkdir.py` - mkdir analog. It is used to create new directories.
@@ -75,6 +80,7 @@ The script contain next programs:
     ./mkdir.py [OPTION]... [DIRECTORY]...
     ```
 > Flag: 
+>
 > -p: create directory and parent directories
 
 
@@ -88,6 +94,7 @@ The script contain next programs:
     ./cp.py [OPTION]... [ORIGINAL OBJECT1] [NEW OBJECT2]
     ```
 > Flag: 
+>
 > -r: copy directory
 
 
