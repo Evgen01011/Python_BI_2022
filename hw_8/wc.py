@@ -45,7 +45,7 @@ else:
                 output[1] += word_number
                 output[2] += bites_number
                 
-                # different outpyt option
+                # different output option
                 if {args.line, args.words, args.bytes} <= {0}:
                     print(line_number, word_number, bites_number, file)
                 else: 
