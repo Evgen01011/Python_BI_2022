@@ -4,6 +4,8 @@ import sys
 import os
 import argparse
 
+# create arguments - file/ directory
+
 parser = argparse.ArgumentParser(
                     prog='sort analog',
                     description='Program returns sorting file or input',
@@ -15,14 +17,14 @@ args = parser.parse_args()
 
 input_list = []
 
-if len(args.directories) == 0:
+if len(args.directories) == 0:                      # sort from stdin
     for line in sys.stdin:
         input_list.append(line)
 else:
-    for file in args.directories:
+    for file in args.directories:                   # sort from file
         with open(file, 'r') as reading:
             for line in reading:
                 input_list.append(line.split())
 
-for element in sorted(input_list):
+for element in sorted(input_list):                  # sorting
     print(*element)
