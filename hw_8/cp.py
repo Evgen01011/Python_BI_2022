@@ -5,6 +5,8 @@ import os
 import shutil
 import argparse
 
+# create arguments - directory/ files for copy and appropriate flag 
+
 parser = argparse.ArgumentParser(
                     prog='cp analog',
                     description='Program copy file and directories',
@@ -15,10 +17,10 @@ parser.add_argument('directories', nargs='+')
 
 args = parser.parse_args()
 
-for file in args.directories[:-1]:
-    if os.path.isfile(file) and not args.r:
+for file in args.directories[:-1]:                                   # iterate on every directory/ files for copy except last
+    if os.path.isfile(file) and not args.r:                          # copy files
         shutil.copy(file, args.directories[-1])
-    elif os.path.isdir(file) and args.r:
+    elif os.path.isdir(file) and args.r:                             # copy directories
         shutil.copytree(file, args.directories[-1])
     else:
-        sys.stderr.write('Error: type and flags do not match\n')
+        sys.stderr.write('Error: type and flags do not match\n')     # stderr in the case inconsistency of type and flags 
