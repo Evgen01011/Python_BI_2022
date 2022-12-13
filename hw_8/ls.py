@@ -4,6 +4,8 @@ import sys
 import os
 import argparse
 
+# create arguments - directory and flag for hidden files 
+
 parser = argparse.ArgumentParser(
                     prog='ls analog',
                     description='Program returns contains of directory',
@@ -14,18 +16,19 @@ parser.add_argument('directories', nargs='*')
 
 args = parser.parse_args()
 
-
-if args.a == 0:
-    if len(args.directories) == 0:
+# output of explicit file
+if not args.a: 
+    if len(args.directories) == 0:                                                           # output for current directory
         print(*list(filter(lambda x: x[0] != '.', os.listdir())), sep='\n')
     else:
-        for directories in args.directories:
-            print(*list(filter(lambda x: x[0] != '.', os.listdir(directories))), sep='\n')
+        for directories in args.directories:                                                 # output for other directories
+            print(*list(filter(lambda x: x[0] != '.', os.listdir(directories))), sep='\n')            
+# output of hidden file            
 else:
-    if len(args.directories) == 0:
+    if len(args.directories) == 0:                                                           # output for current directory
         print('.', '..', sep='\n')
         print(*os.listdir(), sep='\n')
-    else:
+    else:                                                                                    # output for other directories
         print('.', '..', sep='\n')
         for directories in args.directories:
             print(*os.listdir(directories), sep='\n')
