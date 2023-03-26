@@ -3,7 +3,7 @@ The script includes 5 tasks for training OOP
 
 **Tasks**
 
-- Implementation of the chat message system-user.
+- Implementation of the chat message-system-user.
 - Giving new meanings to symbols.
 - Modification of an existing class.
 - dunder methods.
