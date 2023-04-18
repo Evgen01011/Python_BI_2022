@@ -16,8 +16,8 @@ source iter_venv/bin/activate
 
 The second step is the installation of the modules. This can be done in the following way:
 ```
-git clone https://github.com/Evgen01011/Python_BI_2022/homework_7
-pip install -r ../Python_BI_2022/hw_7/requirements.txt
+git clone https://github.com/Evgen01011/Python_BI_2022/homework_2_2
+pip install -r ../Python_BI_2022/hw_2_2/requirements.txt
 ```
 
 ### Features
